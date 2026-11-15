@@ -1,2 +1,1 @@
-import './platform.css';
-import './platform.js';
+import {renderHero} from './sections/hero.js';import {renderFecho} from './sections/fecho.js';import {startMotion} from './motion/palco.js';import {startNav} from './motion/nav.js';import {startGrain} from './motion/grao.js';document.querySelector('#app').innerHTML=renderHero()+renderFecho();startMotion();startNav();startGrain();window.addEventListener('load',()=>document.body.classList.add('ready'));setTimeout(()=>document.body.classList.add('ready'),1200);
